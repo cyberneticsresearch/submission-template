@@ -1,0 +1,229 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+
+%   _____      _                          _   _            _____                               _     
+%  / ____|    | |                        | | (_)          |  __ \                             | |    
+% | |    _   _| |__   ___ _ __ _ __   ___| |_ _  ___ ___  | |__) |___  ___  ___  __ _ _ __ ___| |__  
+% | |   | | | | '_ \ / _ \ '__| '_ \ / _ \ __| |/ __/ __| |  _  // _ \/ __|/ _ \/ _` | '__/ __| '_ \ 
+% | |___| |_| | |_) |  __/ |  | | | |  __/ |_| | (__\__ \ | | \ \  __/\__ \  __/ (_| | | | (__| | | |
+%  \_____\__, |_.__/ \___|_|  |_| |_|\___|\__|_|\___|___/ |_|  \_\___||___/\___|\__,_|_|  \___|_| |_|
+%         __/ |                                                                                      
+%        |___/    
+
+%This template is a modified version of the CVPR (Computer Vision and Pattern Recognition) template (you can found the original cvpr template at this link: https://pt.sharelatex.com/templates/journals/computer-vision-and-pattern-recognition-(cvpr)).
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{picture}
+\usepackage{etoolbox}
+\usepackage{multicol}
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\usepackage{enumitem}
+
+
+% Include other packages here.
+% If you comment hyperref and then uncomment it, you should delete
+
+
+\cvprfinalcopy
+
+\def\cvprPaperID{****}
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+\setcounter{page}{1}
+
+\makeatletter
+\patchcmd{\ps@fancy}{\@chapapp\ \thechapter. \ }{}%
+  {}{\errmessage{Cannot patch \protect\ps@headings}}
+\makeatother
+
+\definecolor{lightblue}{HTML}{20202F}
+
+\newlength{\myouterheadwidth}
+\setlength{\myouterheadwidth}{3.3em}
+\newlength{\myouterheadsep}
+\setlength{\myouterheadsep}{3.4em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand*{\headrulewidth}{0pt}
+\renewcommand*{\footrulewidth}{0pt}
+\fancyfoot[RO]{%
+  \hfill
+  \rlap{%
+    \kern\myouterheadsep
+    \myouterhead
+  }%
+}
+\fancyfoot[LE]{%
+  \llap{%
+    \myouterhead
+    \kern\myouterheadsep
+  }%
+}
+\newcommand*{\myouterhead}{%
+  \sffamily\bfseries\Large
+  \color{white}%
+  
+  \begin{picture}(0,0)
+    \put(0, \dimexpr \footskip + \textheight + \headheight + \headsep
+                     + \topmargin + 1in - \paperheight\relax){%
+      \textcolor{lightblue}{\rule{\myouterheadwidth}{\paperheight}}%
+    }%
+    \put(0,\dimexpr\footskip + \textheight\relax){%
+      \makebox(\myouterheadwidth,0)[t]{%
+        \rotatebox{\ifodd\value{page}-\fi 90}{\leftmark}%
+      }%
+    }%
+    \put(0,0){%
+      \makebox(\myouterheadwidth,0)[b]{\thepage}%
+    }%
+  \end{picture}%
+  \kern\myouterheadwidth
+}
+
+% Using same page style for chapter start pages, which use \pagestyle{plain}
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+
+\usepackage{sectsty}
+
+
+
+% ==========================================================================
+% ==========================================================================
+
+
+
+\begin{document}
+
+\title{Paper's Title}
+
+\author{Your Name\\
+Cybernetics Research\\
+{\bf \small name@email.com}
+}
+
+
+\maketitle
+
+
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+
+Write here
+
+
+\end{abstract}
+
+\noindent Keywords: Keyword 1, Keyword 2, Keyword 3.
+
+
+%%%%%%%%% BODY TEXT
+\section[do not write in this area]{Introduction}
+
+Write here
+
+\subsection{Subsection 1.1}
+
+Write here
+
+\subsection{Subsection 1.2}
+
+
+Write here
+
+\subsection{Subsection 1.3}
+
+Write here
+
+
+
+%-------------------------------------------------------------------------
+
+
+
+\section[do not write in this area]{Section 2}
+
+Write here
+
+
+
+\subsection{Subsection 2.1}
+
+Write here
+
+
+
+%------------------------------------------------------------------------
+
+
+\section[do not write in this area]{Section 3}
+
+Write here
+
+
+\subsection{Subsection 3.1}
+
+Write here
+
+
+
+\subsection{Subsection 3.2}
+
+Write here
+
+
+\subsection{Subsection 3.3}
+
+Write here
+
+
+
+
+%------------------------------------------------------------------------
+
+\section[do not write in this area]{Conclusion}
+
+Write here
+
+
+
+
+%------------------------------------------------------------------------
+
+{\small
+\bibliographystyle{ieee}
+
+\begin{thebibliography}{9}
+
+\bibitem{Name}
+  N. Name,
+  \textit{Title come here},
+  Publisher,
+  Other Informations,
+  Year.
+
+
+\bibitem{Name}
+  N. Name,
+  \textit{Title come here},
+  Publisher,
+  Other Informations,
+  Year.
+  
+
+\end{thebibliography}
+}
+
+
+\end{document}
